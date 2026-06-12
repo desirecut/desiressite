@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desire — Script Hub</title>
+    <link rel="icon" href="logo.png?v=2" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg" aria-hidden="true">
+      <div class="bg-orb bg-orb-1"></div>
+      <div class="bg-orb bg-orb-2"></div>
+      <div class="bg-orb bg-orb-3"></div>
+      <div class="bg-grid"></div>
+      <div class="bg-noise"></div>
+    </div>
+
+    <header class="site-header">
+      <a class="logo" href="#home">
+        <img class="logo-img" src="logo.png?v=2" alt="" width="36" height="36" />
+        desire
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="#home" data-nav="home">Home</a>
+        <a href="#projects" data-nav="projects">Projects</a>
+        <a href="#downloads" data-nav="downloads">Downloads</a>
+        <a href="#contact" data-nav="contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="page">
+      <section id="home" class="hero reveal">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          Free script hub · Executor coming soon
+        </div>
+
+        <img class="hero-logo" src="logo.png?v=2" alt="Desire" width="120" height="120" />
+
+        <h1 class="hero-title">
+          <span class="hero-title-line">DESIRE</span>
+        </h1>
+
+        <p class="hero-tagline">
+          The best free script hub and executor.
+          <span class="hero-tagline-accent">One click. Paste. Play.</span>
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">
+            <span>View Projects</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+          </a>
+          <a
+            class="btn btn-secondary"
+            href="https://discord.gg/5RYa7Xj6fd"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 5.1A16.7 16.7 0 0 0 15.5 4l-.3.6a15.2 15.2 0 0 0-6.4 0L8.5 4a16.7 16.7 0 0 0-3.4 1.1C2.7 8.8 2 12.4 2.2 16v.1a16.9 16.9 0 0 0 5.1 2.6h.1l1.2-1.9a10.8 10.8 0 0 1-2.1-1l.5-.4a12.2 12.2 0 0 0 10.2 0l.5.4a10.8 10.8 0 0 1-2.1 1l1.2 1.9h.1A16.9 16.9 0 0 0 21.8 16c.3-3.6-.5-7.2-2.9-10.9ZM8.6 13.8c-1.1 0-2-.9-2-2.1s.9-2.1 2-2.1 2 .9 2 2.1-.9 2.1-2 2.1Zm6.8 0c-1.1 0-2-.9-2-2.1s.9-2.1 2-2.1 2 .9 2 2.1-.9 2.1-2 2.1Z" /></svg>
+            <span>Join Community</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="stats reveal" aria-label="Statistics">
+        <article class="stat-card">
+          <div class="stat-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h7v7H4V6Zm9 0h7v7h-7V6ZM4 15h7v7H4v-7Zm9 0h7v7h-7v-7Z" /></svg>
+          </div>
+          <span class="stat-value" data-count="1">0</span>
+          <span class="stat-label">Projects</span>
+        </article>
+        <article class="stat-card">
+          <div class="stat-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 11c1.7 0 3-1.3 3-3S17.7 5 16 5s-3 1.3-3 3 1.3 3 3 3ZM8 11c1.7 0 3-1.3 3-3S9.7 5 8 5 5 6.3 5 8s1.3 3 3 3Zm0 2c-2.3 0-7 1.2-7 3.5V19h14v-2.5C15 14.2 10.3 13 8 13Zm8 0c-.3 0-.6 0-1 .1 1.2.8 2 1.9 2 3.4V19h6v-2.5c0-2.3-4.7-3.5-7-3.5Z" /></svg>
+          </div>
+          <span class="stat-value" data-count="10" data-suffix="+">0</span>
+          <span class="stat-label">Users</span>
+        </article>
+      </section>
+
+      <section id="projects" class="section reveal">
+        <div class="section-head">
+          <p class="section-kicker">Scripts</p>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-desc">Tap a card to copy the loadstring straight to your clipboard.</p>
+        </div>
+        <div class="projects-grid" id="projects-grid" aria-label="Desire scripts"></div>
+      </section>
+
+      <section id="downloads" class="section reveal">
+        <div class="panel-card">
+          <div class="panel-copy">
+            <p class="section-kicker">Executor</p>
+            <h2 class="section-title">Downloads</h2>
+            <p class="section-desc">
+              The Desire executor is in development. Join Discord to get early access when it drops.
+            </p>
+          </div>
+          <a class="btn btn-ghost" href="https://discord.gg/5RYa7Xj6fd" target="_blank" rel="noopener noreferrer">
+            Get notified
+          </a>
+        </div>
+      </section>
+
+      <section id="contact" class="section reveal">
+        <div class="panel-card panel-card-discord">
+          <div class="panel-copy">
+            <p class="section-kicker">Community</p>
+            <h2 class="section-title">Contact</h2>
+            <p class="section-desc">
+              Support, updates, and new script drops — all in one place.
+            </p>
+          </div>
+          <a
+            class="btn btn-discord"
+            href="https://discord.gg/5RYa7Xj6fd"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            discord.gg/5RYa7Xj6fd
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© Desire</span>
+      <span class="footer-dot"></span>
+      <span>Built for Roblox</span>
+    </footer>
+
+    <div id="toast" class="toast" aria-live="polite"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
